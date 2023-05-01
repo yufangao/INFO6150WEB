@@ -1,0 +1,9 @@
+/* Adapted from https://unsplash.com License: 
+https://unsplash.com/license */
+
+Logo: https://unsplash.com/photos/Q9S0w7Bhx3A
+sneaker1: https://unsplash.com/photos/iOv3CqiZLtE
+sneaker2: https://unsplash.com/photos/WlDNoK28rtc
+sneaker3: https://unsplash.com/photos/cuYYq3G6o2E
+sneaker4: https://unsplash.com/photos/hhC7SAz4Teo
+myself.jpg: (took by myself)

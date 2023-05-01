@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header">
+    <h1 class="header__title">Basic Form</h1>
+</header>
+<main class="main">
+    <form class="main__form" action="/submit" method="POST">
+        <label class="name__label" for="name"><span>Name:</span></label>
+        <input class="name" id="name" name="name" type="text" required/>
+        <label class="email__label" for="email"><span>Email:</span></label>
+        <input class="email" id="email" name="email" type="email" required/>
+        <label class="annoy_me__label" for="annoy_me"><span>Do you want us to send you annoying emails?</span></label>
+        <input class="annoy_me" id="annoy_me" name="annoy_me" type="checkbox" checked/>
+        <label class="tier__label" for="tier"><span>Tier:</span></label>
+        <select class="tier" id="tier" name="tier" type="checkbox" checked required>
+            <option value="">Please select</option>
+            <option value="1">Silver Tier</option>
+            <option value="2">Gold Tier</option>
+            <option value="3">Platinum Tier</option>
+        </select>
+        <button class="main__form__button" type="submit">Register</button>
+    </form>
+</main>
+<footer class="footer">
+    <a class="footer__link" href="#">privacy policy</a>
+</footer>
+</body>
+</html>

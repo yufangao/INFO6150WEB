@@ -1,0 +1,111 @@
+/*
+	default set
+*/
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+/*
+	grid area
+*/
+#homepage {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"nav main"
+		"footer footer"
+	;
+	grid-template-columns: 20% 1fr;
+}
+
+header{
+	grid-area: header;
+	background-color: plum;
+}
+
+.local-menu{
+	grid-area: nav;
+	background-color: pink;
+	border-right: 2px solid black;
+}
+
+.local-menu ul{
+	list-style: none;
+	/*
+	<gave up the flex operation, just use normal layout>
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 5px 2px;
+	*/
+}
+
+main{
+	grid-area: main;
+	background-color: pink;
+}
+
+main p{
+	margin: 15px 15px;
+	padding: 5px 0;
+}
+
+footer{
+	grid-area: footer;
+	background-color: plum;
+	padding: 13px;
+}
+
+.menubar {
+	height: 100%;
+}
+
+/*
+	<header> top nav using flex to seperate
+*/
+.menubar .menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+/*
+	<header> top nav hover
+*/
+
+.menubar .menu li a{
+	display: block;
+	padding: 13px 14px;
+}
+
+.menubar .menu li a:hover{
+	color: white;
+	display: block;
+	background-color: rebeccapurple;
+}
+
+/*
+	<main> left nav hover
+*/
+.local-menu ul li a{
+	display: block;
+	padding: 10px 5px;
+	padding-right: 4px;
+	margin: 15px;
+	margin-right: 0;
+	margin-left: 3px;
+}
+
+.local-menu ul li a:hover{
+	background-color: plum;
+}

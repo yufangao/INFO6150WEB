@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="myfile.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <img class="header__logo" src="images/1.jpg" alt=""/>
+    </a>
+    <h1 class="header__title">Register</h1>
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li>
+                <button type="button" id="menu_button">Menu</button>
+                <ul class="header__menu__list">
+                    <li class="header__menu__list"><a href="index.html">Index</a></li>
+                    <li class="header__menu__list"><a href="about.html">About Dogs</a></li>
+                    <li class="header__menu__list"><a href="register.html">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <h2 class="main__register__title">Member Register Form</h2>
+    <form action="/register" method="POST">
+        <div class="main__form">
+            <label class="name__label" for="name"><span>* Name:</span></label>
+            <input class="name" id="name" name="name" type="text" placeholder="required" required/>
+            <label class="email__label" for="email"><span>* Email:</span></label>
+            <input class="email" id="email" name="email" type="email" placeholder="required"  required/>
+            <label class="annoy_me__label" for="annoy_me"><span>Do you want us to send you dogs' meme emails?</span></label>
+            <input class="annoy_me" id="annoy_me" name="annoy_me" type="checkbox" checked/>
+            <label class="favorite__label" for="favorite"><span>Favorite Dog:</span></label>
+            <select class="favorite" id="favorite" name="favorite" type="checkbox" checked required>
+                <option value="">Please select</option>
+                <option value="1">Welsh Corgi</option>
+                <option value="2">Samoyed Dog</option>
+                <option value="3">Golden Retriever</option>
+            </select>
+        </div>
+        <div>
+            <button class="main__form__button" type="submit">Register</button>
+        </div>
+    </form>
+</main>
+<footer class="footer">
+    <nav class="footer__menu">
+        <ul class="footer__menu__list">
+            <li class="footer__menu__item"><a href="privacy.html">Privacy Policies</a></li>
+            <li class="footer__menu__item"><a href="contact.html">Contact Us</a></li>
+            <li class="footer__menu__item"><a href="dogsuppliesshop.html">Dog Supplies Shop</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

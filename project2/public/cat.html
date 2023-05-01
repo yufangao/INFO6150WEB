@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cats Index</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="my-file.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="#main_content" class="skiptomaincontent" title="skip to main content" aria-label="skip to main content">Skip to main content</a>
+    <a href="index.html">
+        <img class="header__logo" src="images/logo.jpg" alt="logo_image"/>
+    </a>
+    <h1 class="header__title">Cats Power the Internet</h1>
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li>
+                <!--  added id for button here and in css I added active__menu, active__list for header__menu and header__menu__list for js to use  -->
+                <button type="button" id="menu_button">&#x2630;</button>
+                <ul class="header__menu__list display__nav">
+                    <li class="header__menu__list"><a href="index.html">Home</a></li>
+                    <li class="header__menu__list"><a href="cat.html">Famous Cats</a></li>
+                    <li class="header__menu__list"><a href="events.html">Cat Events</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main" id="main_content">
+<!--    <h2 class="main__title">Introduction of Cats</h2>-->
+    <dialog class="modal">
+        <h3 class="subscribe__title">Subscribe to the Latest News!</h3>
+        <form class="register" action="/subscribe" method="POST">
+            <div class="main__form">
+                <label class="email__label" for="email1">
+                    <span>* Email:</span>
+                    <span class="form-email__error"></span>
+                </label>
+                <input class="email" id="email1" name="email" type="text" placeholder="required"/>
+
+                <label class="confirm__label" for="confirm1">
+                    <span>* Confirm Email:</span>
+                    <span class="form-confirm__error"></span>
+                </label>
+                <input class="confirm" id="confirm1" name="confirm" type="text" placeholder="required"/>
+            </div>
+            <div class="form__buttons">
+                <!--                            class="main__form__button"-->
+                <button class="form__subscribe" type="submit">Subscribe</button>
+                <button class="close" type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+
+    <div class="cards">
+        <div class="card">
+            <h2 class="card__title">Jorts</h2>
+            <img class="card__pic" src="images/card_1.jpg" alt="Jorts Cat Pic"/>
+            <p class="card__text">The Welsh Corgi or Corgi, plural Corgis, or occasionally the etymologically consistent Corgwn; is a small type of herding dog that originated in Wales.</p>
+            <p class="card__text">Ipsum lorem sit
+                <button class="card__button open">Subscribe</button>venloptate inventoro
+            </p>
+        </div>
+        <div class="card">
+            <h2 class="card__title">Jean</h2>
+            <img class="card__pic" src="images/card_2.jpg" alt="Jean Cat Pic"/>
+            <p class="card__text">Samoyed dogs are most often white, and can have a brown tint to their double-layer coat which is naturally dirt repellent. They are known to be used in expeditions in both Arctic and Antarctic regions and have a friendly and agreeable disposition.</p>
+            <p class="card__text">Ipsum lorem sit
+                <button class="card__button open">Subscribe</button>venloptate inventoro
+            </p>
+        </div>
+        <div class="card">
+            <h2 class="card__title">Maru</h2>
+            <img class="card__pic" src="images/card_3.jpg" alt="Maru Cat Pic"/>
+            <p class="card__text">The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat. It is a frequent competitor in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a guide dog.</p>
+            <p class="card__text">Ipsum lorem sit
+                <button class="card__button open">Subscribe</button>venloptate inventoro
+            </p>
+        </div>
+        <div class="card">
+            <h2 class="card__title">Nyancat</h2>
+            <img class="card__pic" src="images/card_4.jpg" alt="NyancatPic"/>
+            <p class="card__text">The Welsh Corgi or Corgi, plural Corgis, or occasionally the etymologically consistent Corgwn; is a small type of herding dog that originated in Wales.</p>
+            <p class="card__text">Ipsum lorem sit
+                <button class="card__button open">Subscribe</button>venloptate inventoro
+            </p>
+        </div>
+        <div class="card">
+            <h2 class="card__title">Grumpy Cat</h2>
+            <img class="card__pic" src="images/card_5.jpg" alt="Grumpy Cat Pic"/>
+            <p class="card__text">Samoyed dogs are most often white, and can have a brown tint to their double-layer coat which is naturally dirt repellent. They are known to be used in expeditions in both Arctic and Antarctic regions and have a friendly and agreeable disposition.</p>
+            <p class="card__text">Ipsum lorem sit
+                <button class="card__button open">Subscribe</button>venloptate inventoro
+            </p>
+        </div>
+        <div class="card">
+            <h2 class="card__title">GLil Bub</h2>
+            <img class="card__pic" src="images/card_6.jpg" alt="GLil Bub Pic"/>
+            <p class="card__text">The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat. It is a frequent competitor in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a guide dog.</p>
+            <p class="card__text">Ipsum lorem sit
+                <button class="card__button open">Subscribe</button>venloptate inventoro
+            </p>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <nav class="footer__menu">
+        <ul class="footer__menu__list">
+            <li class="footer__menu__item"><a href="privacy.html">Privacy Policies</a></li>
+            <li class="footer__menu__item"><a href="contact.html">Contact Us</a></li>
+            <li class="footer__menu__item"><a href="catsuppliesshop.html">Cat Supplies Shop</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

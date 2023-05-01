@@ -1,0 +1,290 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #FFFFCC;
+    --header-bg-color: #CC9933;
+    --footer-bg-color: #CC9933;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+
+    background-color: var(--bg-color);
+
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    display: grid;
+    grid-template-areas:
+	"logo title"
+	"menu menu"
+;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+
+    background-color: var(--header-bg-color);
+}
+
+.header__logo {
+    grid-area: logo;
+
+    aspect-ratio: 1/1;
+    width: 150px;
+}
+
+
+.header__title {
+    grid-area: title;
+
+    align-self: center;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.header__nav {
+    grid-area: menu;
+
+    align-self: center;
+    text-align: center;
+}
+
+.header__menu {
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.open__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+.header__menu button {
+    /*border: none;*/
+    border-width: 0.2rem;
+    border-radius: 20px;
+    padding: 0;
+    height: 2.2rem;
+    width: 5.3rem;
+    margin-bottom: 0.3rem;
+
+    background-color: #4f9ee8;
+    color: white;
+
+    font: inherit;
+    font-size: 1rem;
+    /*text-decoration: underline;*/
+
+    cursor: pointer;
+}
+
+
+.header__menu ul {
+    position: absolute;
+    left: -99%;
+
+    max-height: 0;
+    width: max-content;
+    margin: 0;
+
+    background-color: #e1f0fd;
+
+    overflow: hidden;
+
+    list-style: none;
+    line-height: 1.6;
+}
+
+.header__menu > li {
+    position: relative;
+
+    margin-left: 46%;
+    width: 85px;
+}
+
+.open__list li a{
+    display: block;
+    padding: 13px 14px;
+}
+/*
+:hover
+:focus-within
+*/
+/*.active__list li a{*/
+/*    color: white;*/
+/*    display: block;*/
+/*    background-color: #94c5f2;*/
+/*}
+For list, we need hover in list element because we need to show the bgc's change while focusing on the exact option
+*/
+.open__list li a:hover,
+.open__list li a:focus-within{
+    color: white;
+    display: block;
+    background-color: #94c5f2;
+}
+/*
+:hover
+:focus-within ul
+For menu, this part we don't need hover and focus-within
+*/
+.open__menu > li ul{
+    padding: 0.5rem;
+    max-height: initial;
+}
+
+.main__title {
+    text-align: center;
+
+    font-size: 1.6rem;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+
+    margin-bottom: 0.3rem;
+}
+
+.card {
+    grid-column: span 4;
+
+    display: grid;
+    grid-auto-rows: auto auto 1fr auto;
+
+    place-items: center;
+
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 20px;
+
+    background-color: #3b8c87;
+    color: #000000;
+}
+
+.card img {
+    width: 150px;
+}
+
+.card__title {
+    font-size: 1.12rem;
+}
+
+.card__link {
+    padding: 0.5rem;
+    border-radius: 10px;
+
+    background-color: #4f9ee8;
+    color: white;
+
+    text-decoration: none;
+}
+
+.card__link:hover {
+    box-shadow: 0 0 8px 8px #3c8ac5;
+}
+
+.about_paragraph {
+    margin: 15px 15px;
+    padding: 5px 0;
+    line-height: 1.4rem;
+}
+
+.main__register__title {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+form {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid black;
+}
+
+.main__form {
+    display: grid;
+    grid-template-columns: auto;
+
+    /*border: 1px solid black;*/
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.main__form__button {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left:42%;
+    height: 3rem;
+    width: 6rem;
+}
+
+.main__form label {
+    grid-column: 1/4;
+
+    text-align: right;
+    padding-top: 0;
+    padding-right: 2rem;
+    margin-bottom: 0.4rem;
+}
+
+.main__form input[type=checkbox] {
+    margin-right: auto;
+}
+
+.main__form input {
+    grid-column: 4/12;
+
+    margin-bottom: 0.4rem;
+    width: 14rem;
+}
+
+.main__form .annoy_me {
+    width: 1rem;
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+}
+
+
+.footer__menu__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+
+    padding: 0;
+    margin: 0;
+    height: 1.6rem;
+
+    line-height: 1.5;
+    text-align: center;
+
+    list-style: none;
+}
+
+.footer__menu__item {
+    grid-column: span 4;
+
+    font-size: 0.3em;
+}

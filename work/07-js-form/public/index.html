@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="my-file.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <img class="header__logo" src="images/1.jpg" alt=""/>
+    </a>
+    <h1 class="header__title">Register</h1>
+</header>
+<main class="main">
+    <h2 class="main__register__title">Member Register Form</h2>
+    <form class="register" action="/register" method="POST">
+        <div class="main__form">
+            <label class="name__label" for="name">
+                <span>* Name:</span>
+                <span class="form-name__error">* This field is required!</span>
+            </label>
+            <input class="name" id="name" name="name" type="text" placeholder="required"/>
+
+            <label class="email__label" for="email">
+                <span>* Email:</span>
+                <span class="form-email__error"></span>
+            </label>
+            <input class="email" id="email" name="email" type="text" placeholder="required"/>
+
+            <label class="confirm__label" for="confirm">
+                <span>Confirm Email:</span>
+                <span class="form-confirm__error"></span>
+            </label>
+            <input class="confirm" id="confirm" name="confirm" type="text"/>
+
+            <label class="wants-spam__label" for="wants-spam"><span>Do you want us to send you spam emails?</span></label>
+            <input class="wants-spam" id="wants-spam" name="wants-spam" type="checkbox" checked/>
+            
+            <label class="tier__label" for="tier"><span>Tier:</span></label>
+            <select class="tier" id="tier" name="tier" type="checkbox" checked>
+                <option value="">Please select</option>
+                <option value="1">Golden Tier</option>
+                <option value="2">Platinum Tier</option>
+                <option value="3">Diamond Tier</option>
+            </select>
+        </div>
+        <div>
+            <button class="main__form__button" type="submit">Register</button>
+        </div>
+    </form>
+</main>
+<footer class="footer">
+    <nav class="footer__menu">
+        <ul class="footer__menu__list">
+            <li class="footer__menu__item"><a href="privacy.html">Privacy Policies</a></li>
+            <li class="footer__menu__item"><a href="contact.html">Contact Us</a></li>
+            <li class="footer__menu__item"><a href="dogsuppliesshop.html">Dog Supplies Shop</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dogs Index</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script defer src="myfile.js"></script>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+        <img class="header__logo" src="images/1.jpg" alt=""/>
+    </a>
+    <h1 class="header__title">Dogs Index</h1>
+    <nav class="header__nav">
+        <ul class="header__menu">
+            <li>
+                <!--  added id for button here and in css I added active__menu, active__list for header__menu and header__menu__list for js to use  -->
+                <button type="button" id="menu_button">Menu</button>
+                <ul class="header__menu__list">
+                    <li class="header__menu__list"><a href="index.html">Index</a></li>
+                    <li class="header__menu__list"><a href="about.html">About Dogs</a></li>
+                    <li class="header__menu__list"><a href="register.html">Register</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <h2 class="main__title">Introduction of Dogs</h2>
+    <div class="cards">
+        <div class="card">
+            <img class="card__pic" src="images/2.jpg" alt="Welsh Corgi Pic"/>
+            <h3 class="card__title">Welsh Corgi</h3>
+            <p class="card__text">The Welsh Corgi or Corgi, plural Corgis, or occasionally the etymologically consistent Corgwn; is a small type of herding dog that originated in Wales.</p>
+            <a class="card__link" href="welshcorgi.html">Read More About Corgi</a>
+        </div>
+        <div class="card">
+            <img class="card__pic" src="images/3.jpg" alt="Samoyed Pic"/>
+            <h3 class="card__title">Samoyed Dog</h3>
+            <p class="card__text">Samoyed dogs are most often white, and can have a brown tint to their double-layer coat which is naturally dirt repellent. They are known to be used in expeditions in both Arctic and Antarctic regions and have a friendly and agreeable disposition.</p>
+            <a class="card__link" href="samoyed.html">Read More About Samoyed</a>
+        </div>
+        <div class="card">
+            <img class="card__pic" src="images/4.jpg" alt="Golden Retriever Pic"/>
+            <h3 class="card__title">Golden Retriever</h3>
+            <p class="card__text">The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat. It is a frequent competitor in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a guide dog.</p>
+            <a class="card__link" href="goldenretriever.html">Read More About Golden Retriever</a>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <nav class="footer__menu">
+        <ul class="footer__menu__list">
+            <li class="footer__menu__item"><a href="privacy.html">Privacy Policies</a></li>
+            <li class="footer__menu__item"><a href="contact.html">Contact Us</a></li>
+            <li class="footer__menu__item"><a href="dogsuppliesshop.html">Dog Supplies Shop</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>
